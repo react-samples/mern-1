@@ -1,0 +1,10 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+  body
+    h1 ログイン
+    form(action="/login" method="POST")
+      input(type="text" name="username" placeholder="名前")
+      input(type="password" placeholder="パスワード" name="password")
+      button(type="submit") 送信

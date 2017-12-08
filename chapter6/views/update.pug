@@ -1,0 +1,11 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+  body
+    h1 メッセージを保存
+    form(action="update" method="POST" encType="multipart/form-data")
+      textarea(placeholder="メッセージ" name="message")
+      input(type="file" name="image")
+      button(type="submit") 送信
+

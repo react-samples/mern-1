@@ -1,0 +1,11 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+  body
+    h1 新規登録
+    form(action="/signin" method="POST" encType="multipart/form-data")
+      input(type="text" name="username" placeholder="名前")
+      input(type="password" placeholder="パスワード" name="password")
+      input(type="file" name="avatar")
+      button(type="submit") 送信

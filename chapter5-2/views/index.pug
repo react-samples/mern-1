@@ -1,0 +1,14 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+  body
+    h1 投稿一覧
+    section
+      each msg in messages
+        div
+          h2 #{msg.username}
+          time #{msg.date}
+          p #{msg.message}
+        if msg.image_path
+          img(src=msg.image_path)
